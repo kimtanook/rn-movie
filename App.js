@@ -1,8 +1,4 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  NavigationContainer,
-} from "@react-navigation/native";
+import { DarkTheme, NavigationContainer } from "@react-navigation/native";
 import Root from "./navigation/Root";
 
 export default function App() {

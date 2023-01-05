@@ -1,14 +1,5 @@
 import styled from "@emotion/native";
-import { StatusBar } from "expo-status-bar";
-import { useEffect, useState } from "react";
-import {
-  ActivityIndicator,
-  Image,
-  ImageBackground,
-  ScrollView,
-  Text,
-  View,
-} from "react-native";
+import { Text } from "react-native";
 
 const NowPlaying = ({ movie }) => {
   return (
@@ -80,5 +71,6 @@ const StImage = styled.Image`
 `;
 const StTextView = styled.View`
   padding-top: 80px;
+  padding-left: 10px;
   width: 230px;
 `;

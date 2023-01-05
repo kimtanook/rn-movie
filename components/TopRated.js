@@ -1,19 +1,15 @@
 import styled from "@emotion/native";
-import { StatusBar } from "expo-status-bar";
-import { useEffect, useState } from "react";
-import {
-  ActivityIndicator,
-  FlatList,
-  Image,
-  ImageBackground,
-  ScrollView,
-  Text,
-  View,
-} from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { Image, Text } from "react-native";
 
 const TopRated = ({ movie }) => {
+  const { navigate } = useNavigation();
   return (
-    <StView>
+    <StView
+      onPress={() =>
+        navigate("Stacks", { screen: "Detail", params: { movieId: movie.id } })
+      }
+    >
       <Image
         source={{
           uri: `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`,
