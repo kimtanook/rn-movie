@@ -17,7 +17,7 @@ export default function Tabs() {
         options={{
           title: "영화", // 상단 헤더
           headerTitleAlign: "center", // 안드와 ios 기본값 다름
-          tabBarLabel: "movies", // 하단 탭바
+          tabBarLabel: "Movies", // 하단 탭바
           tabBarIcon: (
             { color, size } // 기본 컬러, 기본 사이즈
           ) => <MaterialIcons name="local-movies" size={size} color={color} />,
