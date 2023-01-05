@@ -54,6 +54,7 @@ const StTitleText = styled.Text`
   color: white;
   font-size: 20px;
   margin-bottom: 10px;
+  font-weight: bold;
 `;
 const StText = styled.Text`
   color: white;

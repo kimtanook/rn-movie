@@ -32,7 +32,14 @@ const NowPlaying = ({ movie }) => {
             />
           </StImageView>
           <StTextView>
-            <Text style={{ color: "white", fontSize: 20, marginBottom: 10 }}>
+            <Text
+              style={{
+                color: "white",
+                fontSize: 20,
+                fontWeight: "bold",
+                marginBottom: 10,
+              }}
+            >
               {movie.title}
             </Text>
             <Text style={{ color: "white", marginBottom: 5 }}>

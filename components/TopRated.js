@@ -24,7 +24,11 @@ const TopRated = ({ movie }) => {
         }}
       />
       <Text style={{ color: "white" }}>{movie.vote_average} / 10</Text>
-      <Text style={{ color: "white" }} numberOfLines={2} ellipsizeMode="tail">
+      <Text
+        style={{ color: "white", fontSize: 15, fontWeight: "bold" }}
+        numberOfLines={2}
+        ellipsizeMode="tail"
+      >
         {movie.title}
       </Text>
     </StView>
